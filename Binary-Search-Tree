@@ -1,0 +1,26 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+1.Aşama => root olarak 7'yi belirleyelim. Root'un sol kısmında 7'den küçük sayılar, sağ kısmında ise 7'den
+büyük sayılar olacak şekilde elemanları dağıtalım.
+2.Aşama => 5 7'den küçük olduğu için rootun sol kısmına eklenir.
+3.Aşama => 1 hem 7'den hem 5'den küçük olduğu için 5'in soluna eklenir.
+4.Aşama => 8 7'den büyük olduğu için rootun sağ kısmına eklenir.
+5.Aşama => 3 7'den ve 5'ten küçük fakat 1'den büyük olduğu için 1'in sağ kısmına eklenir.
+6.Aşama => 6 7'den küçükfakat 5'ten büyük olduğu için 5'in sağ kısmına eklenir.
+7.Aşama => 0 7'den, 5'ten ve 1'den küçük olduğu için 1'in sol kısmına eklenir.
+8.Aşama => 9 hem 7'den hem de 8'den büyük olduğu için 8'in sağ kısmına eklenir.
+9.Aşama => 4 7 ve 5'den küçük, 1 ve 3'ten büyük olduğu için 3'ün sağ kısmına eklenir.
+10.Aşama => 2 7 ve 5'den küçük, 1'den büyük ve 3'den küçük olduğu için 3'ün sol kısmına eklemir.
+
+Ağacımızın son şekli aşağıdaki gibi olur.
+
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+   / \
+  0   3
+     / \
+    2   4 
+
